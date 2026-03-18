@@ -3,7 +3,7 @@
     {
       "credential_issuer": "Farmer",
       "issuer_id": "Farmer",
-      "didUrl": "did:web:kysz-parth.github.io:inji-certify:vc-local-ed25519",
+      "did": "did:web:lucidledgeradmin.github.io:lucidpublicRepo",
       "protocol": "OpenId4VCI",
       "display": [
         {
@@ -19,19 +19,19 @@
       ],
       "client_id": "wallet-demo",
       "redirect_uri": "http://64.227.157.226:3001/redirect",
-      "token_endpoint": "http://mimoto-service:8099/v1/mimoto/get-token/Farmer",
+      "token_endpoint": "http://64.227.157.226:8099/v1/mimoto/get-token/Farmer",
       "authorization_audience": "https://esignet-mock.collab.mosip.net/v1/esignet/vci/credential",
       "proxy_token_endpoint": "https://esignet-mock.collab.mosip.net/v1/esignet/oauth/v2/token",
       "client_alias": "wallet-demo-client",
       "qr_code_type": "EmbeddedVC",
-      "credential_issuer_host": "http://certify-nginx:80",
-      "enabled": "true",
-      "wellknown_endpoint": "http://certify-nginx:80/.well-known/openid-credential-issuer"
+      "credential_issuer_host": "http://64.227.157.226:8091",
+      "enabled": true,
+      "wellknown_endpoint": "http://64.227.157.226:8091/.well-known/openid-credential-issuer"
     },
     {
       "issuer_id": "MockMdl",
       "credential_issuer": "MockMdl",
-      "didUrl": "did:web:kysz-parth.github.io:inji-certify:vc-local-ed25519",
+      "did": "did:web:lucidledgeradmin.github.io:lucidpublicRepo",
       "protocol": "OpenId4VCI",
       "display": [
         {
@@ -47,14 +47,14 @@
       ],
       "client_id": "wallet-demo",
       "redirect_uri": "http://64.227.157.226:3001/redirect",
-      "token_endpoint": "http://mimoto-service:8099/v1/mimoto/get-token/MockMdl",
+      "token_endpoint": "http://64.227.157.226:8099/v1/mimoto/get-token/MockMdl",
       "authorization_audience": "https://esignet-mock.collab.mosip.net/v1/esignet/vci/credential",
       "proxy_token_endpoint": "https://esignet-mock.collab.mosip.net/v1/esignet/oauth/v2/token",
       "client_alias": "wallet-demo-client",
       "qr_code_type": "EmbeddedVC",
-      "credential_issuer_host": "http://certify-nginx:80",
-      "enabled": "true",
-      "wellknown_endpoint": "http://certify-nginx:80/.well-known/openid-credential-issuer"
+      "credential_issuer_host": "http://64.227.157.226:8091",
+      "enabled": true,
+      "wellknown_endpoint": "http://64.227.157.226:8091/.well-known/openid-credential-issuer"
     }
   ]
 }
