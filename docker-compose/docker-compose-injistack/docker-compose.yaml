@@ -87,7 +87,7 @@ services:
       - ./config/mimoto-default.properties:/home/mosip/mimoto-default.properties
       - ./config/mimoto-issuers-config.json:/home/mosip/mimoto-issuers-config.json
       - ./config/mimoto-trusted-verifiers.json:/home/mosip/mimoto-trusted-verifiers.json
-      - ./certs/oidckeystore.p12:/home/mosip/certs/oidckeystore.p12
+      - ./certs:/home/mosip/certs
     depends_on:
       - database
       - redis
