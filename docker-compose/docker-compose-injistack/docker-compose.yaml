@@ -69,6 +69,7 @@ services:
     environment:
       - container_user=mosip
       - active_profile_env=default
+      - JAVA_TOOL_OPTIONS=-Djava.net.preferIPv4Stack=true
       - SPRING_CONFIG_NAME=mimoto
       - SPRING_CONFIG_LOCATION=/home/mosip/
       - oidc_p12_password=dummypassword
@@ -99,7 +100,7 @@ services:
       - '3001:3004'
     environment:
       - DEFAULT_LANG=en
-      - MIMOTO_URL=http://localhost:3001/v1/mimoto
+      - MIMOTO_URL=/v1/mimoto
     volumes:
       - ./config/mimoto-default.properties:/home/mosip/mimoto-default.properties
       - ./config/mimoto-issuers-config.json:/home/mosip/mimoto-issuers-config.json
