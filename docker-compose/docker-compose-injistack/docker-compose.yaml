@@ -100,7 +100,7 @@ services:
       - '3001:3004'
     environment:
       - DEFAULT_LANG=en
-      - MIMOTO_URL=
+      - MIMOTO_URL=http://64.227.157.226:3001/v1/mimoto
     volumes:
       - ./config/mimoto-default.properties:/home/mosip/mimoto-default.properties
       - ./config/mimoto-issuers-config.json:/home/mosip/mimoto-issuers-config.json
